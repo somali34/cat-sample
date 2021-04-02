@@ -1,0 +1,215 @@
+@charset 'UTF-8';/* 文字コードの指定 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/* Base
+------------------------------------------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans JP', '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: #fafdff;
+
+}
+
+
+
+
+small {
+    font-size: 0.8em;
+}
+
+
+
+/*header
+---------------------------------------*/
+
+
+
+.header-main-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/main.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-logo {
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 0 auto;
+
+}
+
+.main-logo::before, .main-logo::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    margin: 0 20px;
+    background-color: #fafdff;
+    vertical-align: middle;
+}
+
+/* main
+------------------------------------------*/
+
+
+
+h2  {
+    font-family: 'Dancing Script', cursive;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+}
+.main-header {
+    width: 100%;
+    height: 80px;
+    background-color: #555;
+}
+
+
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(#555, #fff, #111);
+
+}
+
+.box1 {
+     margin: 20px;
+     background-color: #f29c9f;
+}
+
+.box2 {
+     margin: 20px;
+     background-color: #f29c9f;
+
+}
+
+.box3 {
+     margin: 30px;
+     background-color: #f29c9f;
+}
+
+h3 {
+    color: #222;
+    margin: 10px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+p {
+    background-color: #fafdff;
+    color: #222;
+    padding: 30px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+/*btn-container
+----------------------------------------*/
+
+.btn-container {
+    width: 100%;
+    height: 200px;
+     background-color: #111;
+
+}
+
+.buttons {
+     background-image: linear-gradient(#fff, #da536e);
+    position: relative;
+    padding: 10px;
+    background-color: pink;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 30px auto;
+}
+ a {
+     text-align: left;
+     font-size: 2.6rem;
+     text-decoration: none;
+     font-family: 'Dancing Script', cursive;
+
+ }
+
+.btn-container i {
+    position: absolute;
+    top: 27%;
+    font-size: 3rem;
+    color: #222;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.button-text {
+    padding-right: 30px;
+    color: #222;
+}
+
+/*footer
+-----------------------------------------*/
+
+footer {
+    background-color: #000;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*pc表示
+--------------------------------------------*/
+@media (min-width: 769px){
+    .header-main-img {
+        position: relative;
+    }
+
+  .main-logo {
+      font-size: 4rem;
+      position: absolute;
+      bottom: 5%;
+  }
+
+  h2 {
+      font-size: 3rem;
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
